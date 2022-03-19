@@ -1,0 +1,15 @@
+@import './_imports.scss';
+@import './_colors.scss';
+@import './footer-desktop';
+@import './container-desktop';
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: $veryDarkBlue;
+}

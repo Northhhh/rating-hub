@@ -1,0 +1,22 @@
+.attribution
+{
+    display: block;
+    position: absolute  ;
+    bottom: 0px;
+    right: 0;
+    padding: 30px;
+    font-size: 20px;
+    color: $white;
+    line-height: 40px;
+    text-align: right;
+
+    a
+    {
+        color: $lightGray;
+
+        &:visited
+        {
+            color: $mediumGray;
+        }
+    }
+}
