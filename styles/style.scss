@@ -1,7 +1,8 @@
 @import './_imports.scss';
 @import './_colors.scss';
-@import './footer-desktop';
-@import './container-desktop';
+@import './_footer-desktop';
+@import './_container-desktop';
+@import './_animations';
 
 *
 {
@@ -12,4 +13,11 @@
 
 body{
     background-color: $veryDarkBlue;
+    height: 100vh;
+    position: relative;
+}
+
+[hidden]
+{
+    display: none !important;
 }
