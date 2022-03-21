@@ -138,6 +138,7 @@ main #rating #submit-button {
   color: white;
   -webkit-transition: background-color .5s, color .5s;
   transition: background-color .5s, color .5s;
+  border: none;
 }
 
 main #rating #submit-button:hover {
