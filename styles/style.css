@@ -20,136 +20,6 @@
   color: #7c8798;
 }
 
-#container {
-  background: -webkit-gradient(linear, left top, left bottom, from(#252d37), to(#121417));
-  background: linear-gradient(180deg, #252d37 0%, #121417 100%);
-  width: 28%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border-radius: 30px;
-  padding: 2%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#container h1 {
-  color: white;
-  margin: 5% 0;
-  font-size: 700;
-}
-
-#container h3 {
-  color: #959eac;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-#container #rating label {
-  background-color: #252d37;
-  display: inline-block;
-  width: 5vmin;
-  height: 5vmin;
-  line-height: 5vmin;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  vertical-align: middle;
-  color: #7c8798;
-  text-align: center;
-  border-radius: 50%;
-  -webkit-transition: background-color .5s, color .5s;
-  transition: background-color .5s, color .5s;
-}
-
-#container #rating img {
-  padding: 2vh;
-  width: 2vh;
-  height: 2vh;
-  background-color: #252d37;
-  border-radius: 50%;
-}
-
-#container #rating #submit-button {
-  width: 100%;
-  height: 6vh;
-  margin: 5% 0;
-  border-radius: 3vh;
-  font-weight: 600;
-  font-size: large;
-  text-transform: uppercase;
-  background-color: #fb7413;
-  color: white;
-  -webkit-transition: background-color .5s, color .5s;
-  transition: background-color .5s, color .5s;
-}
-
-#container #rating #submit-button:hover {
-  color: #fb7413;
-  background-color: white;
-}
-
-#container #rating #input-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 5% 0;
-}
-
-#container #rating #input-container label:hover {
-  background-color: orange;
-  color: white;
-}
-
-#container #rating #input-container input[type="radio"]:checked + label {
-  background-color: #7c8798;
-  color: white;
-}
-
-#container #thank-you {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-#container #thank-you #your-rating {
-  color: #fb7413;
-  background-color: #252d37;
-  line-height: 25px;
-  padding: 0 2vh;
-  margin: 5% 0;
-  font-size: 15px;
-  border-radius: 3.5vh;
-}
-
 @-webkit-keyframes hide-div {
   0% {
     opacity: 1;
@@ -190,6 +60,137 @@
   100% {
     opacity: 1;
   }
+}
+
+main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#252d37), to(#121417));
+  background: linear-gradient(180deg, #252d37 0%, #121417 100%);
+  max-width: 400px;
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 30px;
+  padding: 5vmin;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main h1 {
+  color: white;
+  margin: 5% 0;
+  font-size: 700;
+}
+
+main h3 {
+  color: #959eac;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+main #rating label {
+  background-color: #252d37;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: middle;
+  color: #7c8798;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: background-color .5s, color .5s;
+  transition: background-color .5s, color .5s;
+}
+
+main #rating img {
+  padding: 2vh;
+  width: 2vh;
+  height: 2vh;
+  background-color: #252d37;
+  border-radius: 50%;
+}
+
+main #rating #submit-button {
+  width: 100%;
+  height: 6vh;
+  margin: 5% 0;
+  border-radius: 3vh;
+  font-weight: 600;
+  font-size: large;
+  text-transform: uppercase;
+  background-color: #fb7413;
+  color: white;
+  -webkit-transition: background-color .5s, color .5s;
+  transition: background-color .5s, color .5s;
+}
+
+main #rating #submit-button:hover {
+  color: #fb7413;
+  background-color: white;
+}
+
+main #rating #input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 5% 0;
+}
+
+main #rating #input-container label:hover {
+  background-color: orange;
+  color: white;
+}
+
+main #rating #input-container input[type="radio"]:checked + label {
+  background-color: #7c8798;
+  color: white;
+}
+
+main #thank-you {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main #thank-you #your-rating {
+  color: #fb7413;
+  background-color: #252d37;
+  line-height: 25px;
+  padding: 0 2vh;
+  margin: 5% 0;
+  font-size: 15px;
+  border-radius: 3.5vh;
 }
 
 * {
